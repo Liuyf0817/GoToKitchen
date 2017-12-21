@@ -15,6 +15,7 @@
 		272A6ECD1FEB62CE0027EE91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A6ECB1FEB62CE0027EE91 /* LaunchScreen.storyboard */; };
 		272A6ED81FEB62CF0027EE91 /* GoToKitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A6ED71FEB62CF0027EE91 /* GoToKitchenTests.swift */; };
 		272A6EE31FEB62CF0027EE91 /* GoToKitchenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A6EE21FEB62CF0027EE91 /* GoToKitchenUITests.swift */; };
+		272A6EF11FEB69E40027EE91 /* MapForItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A6EF01FEB69E40027EE91 /* MapForItinerary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		272A6EDE1FEB62CF0027EE91 /* GoToKitchenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoToKitchenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		272A6EE21FEB62CF0027EE91 /* GoToKitchenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToKitchenUITests.swift; sourceTree = "<group>"; };
 		272A6EE41FEB62CF0027EE91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272A6EF01FEB69E40027EE91 /* MapForItinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapForItinerary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				272A6EBF1FEB62CE0027EE91 /* AppDelegate.swift */,
+				272A6EF01FEB69E40027EE91 /* MapForItinerary.swift */,
 				272A6EC11FEB62CE0027EE91 /* ViewController.swift */,
 				272A6EC31FEB62CE0027EE91 /* Main.storyboard */,
 				272A6EC91FEB62CE0027EE91 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272A6EF11FEB69E40027EE91 /* MapForItinerary.swift in Sources */,
 				272A6EC21FEB62CE0027EE91 /* ViewController.swift in Sources */,
 				272A6EC01FEB62CE0027EE91 /* AppDelegate.swift in Sources */,
 				272A6EC81FEB62CE0027EE91 /* GoToKitchen.xcdatamodeld in Sources */,
