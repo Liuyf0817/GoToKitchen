@@ -15,6 +15,7 @@
 		272A6ECD1FEB62CE0027EE91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A6ECB1FEB62CE0027EE91 /* LaunchScreen.storyboard */; };
 		272A6ED81FEB62CF0027EE91 /* GoToKitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A6ED71FEB62CF0027EE91 /* GoToKitchenTests.swift */; };
 		272A6EE31FEB62CF0027EE91 /* GoToKitchenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A6EE21FEB62CF0027EE91 /* GoToKitchenUITests.swift */; };
+		272A6EF41FECAEBA0027EE91 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272A6EF31FECAEBA0027EE91 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		272A6EDE1FEB62CF0027EE91 /* GoToKitchenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoToKitchenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		272A6EE21FEB62CF0027EE91 /* GoToKitchenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToKitchenUITests.swift; sourceTree = "<group>"; };
 		272A6EE41FEB62CF0027EE91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272A6EF31FECAEBA0027EE91 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272A6EF41FECAEBA0027EE91 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				272A6ED61FEB62CF0027EE91 /* GoToKitchenTests */,
 				272A6EE11FEB62CF0027EE91 /* GoToKitchenUITests */,
 				272A6EBD1FEB62CE0027EE91 /* Products */,
+				272A6EF21FECAEBA0027EE91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +132,14 @@
 			path = GoToKitchenUITests;
 			sourceTree = "<group>";
 		};
+		272A6EF21FECAEBA0027EE91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				272A6EF31FECAEBA0027EE91 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +150,7 @@
 				272A6EB81FEB62CE0027EE91 /* Sources */,
 				272A6EB91FEB62CE0027EE91 /* Frameworks */,
 				272A6EBA1FEB62CE0027EE91 /* Resources */,
+				272A6EF51FECAEEB0027EE91 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +269,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		272A6EF51FECAEEB0027EE91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		272A6EB81FEB62CE0027EE91 /* Sources */ = {
@@ -432,6 +462,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8HYQZJ2HZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GoToKitchen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.walter.GoToKitchen;
@@ -447,6 +481,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8HYQZJ2HZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GoToKitchen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.walter.GoToKitchen;
